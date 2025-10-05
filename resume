@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Derrick Chilenga</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/DC.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Derrick Chilenga</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Resume Section -->
+    <section id="resume-section" class="resume-section pt-5 pb-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-12 content">
+
+            <h2>Education</h2>
+            <ul>
+              <li><strong>MSc in Mathematical Sciences (Data Science)</strong> – AIMS Rwanda, 2024</li>
+              <li><strong>Bachelor’s in Mathematics (Statistics)</strong> – Copperbelt University, Zambia</li>
+              <li><strong>Postgraduate Diploma in Data Analytics & Business Management</strong></li>
+            </ul>
+
+            <h2>Professional Experience</h2>
+            <ul>
+              <li><strong>Sales Officer</strong> – Dangote, 3 years</li>
+              <li><strong>Data Science & Analytics Intern</strong> – Future Interns</li>
+              <li><strong>Teaching Assistant & Student Tutor</strong> – CBU Mathematics Department</li>
+            </ul>
+
+            <h2>Research & Projects</h2>
+            <ul>
+              <li>Brain Tumor Detection using Deep Learning and Numerical Tensor Methods</li>
+              <li>Bank Customer Churn Prediction – Industry Immersion Africa</li>
+              <li>Geophysical Inversion using Gaussian Processes for Subsurface Frontier Recovery</li>
+            </ul>
+
+            <h2>Skills</h2>
+            <div class="progress mb-2">
+              <span>Data Analysis & Visualization</span>
+              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Machine Learning & AI</span>
+              <div class="progress-bar" role="progressbar" style="width: 85%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Mathematics & Statistics</span>
+              <div class="progress-bar" role="progressbar" style="width: 95%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Python, R, SQL</span>
+              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
