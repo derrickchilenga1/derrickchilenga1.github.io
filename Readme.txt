@@ -5,7 +5,7 @@ This is my personal website, built using the **Personal** template from [Bootstr
 ---
 
 ## 🚀 Live Site
-[View Website](https://derrickchilenga1.github.io/index.html)  
+[View Website](https://derrickchilenga1.github.io/portifolio-details.html)  
 
 ---
 
