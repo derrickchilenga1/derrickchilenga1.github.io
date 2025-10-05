@@ -67,7 +67,7 @@
               <div class="portfolio-info">
                 <h4>Brain Tumor Detection</h4>
                 <p>Deep Learning & Tensor Methods</p>
-                <a href="assets/img/project1.jpg" class="glightbox" title="Brain Tumor Detection"><i class="bi bi-plus"></i></a>
+                <a href="assets/img/tensor.jpg" class="glightbox" title="Brain Tumor Detection"><i class="bi bi-plus"></i></a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
               <div class="portfolio-info">
                 <h4>Bank Customer Churn</h4>
                 <p>Predictive Modeling</p>
-                <a href="assets/img/project2.jpg" class="glightbox" title="Bank Customer Churn"><i class="bi bi-plus"></i></a>
+                <a href="assets/img/churn.jpg" class="glightbox" title="Bank Customer Churn"><i class="bi bi-plus"></i></a>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
               <div class="portfolio-info">
                 <h4>Geophysical Inversion</h4>
                 <p>Gaussian Processes Research</p>
-                <a href="assets/img/project3.jpg" class="glightbox" title="Geophysical Inversion"><i class="bi bi-plus"></i></a>
+                <a href="assets/img/geophysical.png" class="glightbox" title="Geophysical Inversion"><i class="bi bi-plus"></i></a>
               </div>
             </div>
           </div>
