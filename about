@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Derrick Chilenga</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/DC.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Derrick Chilenga</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section pt-5 pb-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/FT1.jpg" class="img-fluid rounded-circle mb-3" alt="Derrick Chilenga">
+            <h2>Derrick Chilenga</h2>
+            <p>Data Scientist & AI Enthusiast</p>
+            <div class="social-links mt-2">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 pt-3 pt-lg-0 content">
+            <h3>About Me</h3>
+            <p>
+              I am passionate about leveraging <strong>Data Science, Machine Learning,</strong> and <strong>Mathematics</strong>
+              to solve real-world problems in finance, health, and clean energy sectors.
+            </p>
+
+            <h4>Education</h4>
+            <ul>
+              <li>MSc in Mathematical Sciences (Data Science), AIMS Rwanda (2024)</li>
+              <li>Bachelor’s in Mathematics (Statistics Major), CBU, Zambia</li>
+              <li>Postgraduate Diploma in Data Analytics and Business Management</li>
+            </ul>
+
+            <h4>Research & Projects</h4>
+            <ul>
+              <li>Brain Tumor Detection using Deep Learning and Numerical Tensor Methods</li>
+              <li>Bank Customer Churn Prediction under Industry Immersion Africa</li>
+              <li>Geophysical Inversion using Gaussian Processes (GPs)</li>
+            </ul>
+
+            <h4>Skills</h4>
+            <div class="progress mb-2">
+              <span>Data Analysis & Visualization</span>
+              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Machine Learning & AI</span>
+              <div class="progress-bar" role="progressbar" style="width: 85%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Mathematics & Statistics</span>
+              <div class="progress-bar" role="progressbar" style="width: 95%;"></div>
+            </div>
+            <div class="progress mb-2">
+              <span>Python, R, SQL</span>
+              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
