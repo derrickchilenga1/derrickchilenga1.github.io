@@ -5,40 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derrick Chilenga | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 40px;">
+<body>
 
   <!-- Header Section -->
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm <strong>Derrick Chilenga</strong> — Data Scientist & AI Enthusiast</p>
+  <header class="header">
+    <div class="overlay">
+      <h1>Derrick Chilenga</h1>
+      <p>Data Scientist & AI Enthusiast</p>
+      <img src="assets/img/FT1.jpg" alt="Derrick Chilenga" class="profile-img">
+    </div>
   </header>
 
-  <!-- Profile Image -->
-  <section>
-    <img src="assets/img/FT1.jpg" 
-         alt="Derrick Chilenga" 
-         style="width:200px; height:200px; border-radius:50%; object-fit:cover; margin-top:20px; border:3px solid #333;">
-  </section>
-
   <!-- About Section -->
-  <section style="margin-top: 30px;">
+  <section class="about" id="about">
     <h2>About Me</h2>
     <p>
-      I’m passionate about leveraging <strong>Data Science, Machine Learning,</strong> 
-      and <strong>Mathematics</strong> to solve real-world problems in 
-      finance, health, and clean energy sectors.
+      I am passionate about leveraging <strong>Data Science, Machine Learning,</strong> and <strong>Mathematics</strong> 
+      to solve real-world problems in finance, health, and clean energy sectors. 
+      I hold an MSc in Mathematical Sciences (Data Science) from AIMS Rwanda and a Bachelor's in Mathematics with Statistics from CBU, Zambia.
     </p>
   </section>
 
-  <!-- Links Section -->
-  <section style="margin-top: 40px;">
-    <h3>Explore More</h3>
-    <a href="portfolio-details.html" style="text-decoration: none; color: #007bff;">View My Projects</a>
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">
+        <h4>Data Analysis & Visualization</h4>
+        <div class="skill-bar"><span style="width: 90%;"></span></div>
+      </div>
+      <div class="skill">
+        <h4>Machine Learning & AI</h4>
+        <div class="skill-bar"><span style="width: 85%;"></span></div>
+      </div>
+      <div class="skill">
+        <h4>Mathematics & Statistics</h4>
+        <div class="skill-bar"><span style="width: 95%;"></span></div>
+      </div>
+      <div class="skill">
+        <h4>Python, R, SQL</h4>
+        <div class="skill-bar"><span style="width: 90%;"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+
+      <div class="project-card">
+        <h3>Brain Tumor Detection using Deep Learning</h3>
+        <p>Developed models to classify brain tumor types using image classification and numerical tensor methods. Focused on enhancing accuracy of detection using neural networks and synthetic training data.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Bank Customer Churn Prediction</h3>
+        <p>Implemented predictive models for churn using machine learning techniques under Industry Immersion Africa program. Analyzed customer data to identify key drivers of churn and improve retention strategies.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Geophysical Inversion using Gaussian Processes</h3>
+        <p>Researched and implemented GP models for parameter estimation in non-linear ill-posed inverse problems. Generated synthetic training data using forward models and MAP estimation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:derrickchilenga1@gmail.com">derrickchilenga1@gmail.com</a></p>
+    <p>Phone: <a href="tel:+260963768567">+260 963 768 567</a></p>
+    <p>Explore more: <a href="portfolio-details.html">My Full Portfolio</a></p>
   </section>
 
   <!-- Footer -->
-  <footer style="margin-top: 60px; color: #555;">
+  <footer class="footer">
     <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
   </footer>
 
