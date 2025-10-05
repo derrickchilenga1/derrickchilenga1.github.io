@@ -1,93 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derrick Chilenga | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Full-screen video background */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    #hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    #hero .hero-content {
+      z-index: 1;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    #hero p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.2rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00bfff;
+    }
+
+    /* Section styling */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #00bfff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #007bff;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Header Section -->
-  <header class="header">
-    <div class="overlay">
-      <h1>Derrick Chilenga</h1>
-      <p>Data Scientist & AI Enthusiast</p>
-      <img src="assets/img/FT1.jpg" alt="Derrick Chilenga" class="profile-img">
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Derrick Chilenga</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      I am passionate about leveraging <strong>Data Science, Machine Learning,</strong> and <strong>Mathematics</strong> 
-      to solve real-world problems in finance, health, and clean energy sectors. 
-      I hold an MSc in Mathematical Sciences (Data Science) from AIMS Rwanda and a Bachelor's in Mathematics with Statistics from CBU, Zambia.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill">
-        <h4>Data Analysis & Visualization</h4>
-        <div class="skill-bar"><span style="width: 90%;"></span></div>
+  <!-- Hero Section -->
+  <section id="hero">
+    <video autoplay muted loop>
+      <source src="assets/video/DC.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Hello, I'm Derrick Chilenga</h1>
+      <p>Data Scientist | AI Enthusiast | Problem Solver</p>
+      <div class="social-links mt-3">
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
       </div>
-      <div class="skill">
-        <h4>Machine Learning & AI</h4>
-        <div class="skill-bar"><span style="width: 85%;"></span></div>
-      </div>
-      <div class="skill">
-        <h4>Mathematics & Statistics</h4>
-        <div class="skill-bar"><span style="width: 95%;"></span></div>
-      </div>
-      <div class="skill">
-        <h4>Python, R, SQL</h4>
-        <div class="skill-bar"><span style="width: 90%;"></span></div>
-      </div>
+      <a href="about.html" class="btn btn-primary mt-4">Learn More About Me</a>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-cards">
-
-      <div class="project-card">
-        <h3>Brain Tumor Detection using Deep Learning</h3>
-        <p>Developed models to classify brain tumor types using image classification and numerical tensor methods. Focused on enhancing accuracy of detection using neural networks and synthetic training data.</p>
+  <!-- Quick Sections: Projects & Contact -->
+  <section id="projects">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
       </div>
-
-      <div class="project-card">
-        <h3>Bank Customer Churn Prediction</h3>
-        <p>Implemented predictive models for churn using machine learning techniques under Industry Immersion Africa program. Analyzed customer data to identify key drivers of churn and improve retention strategies.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm">
+            <img src="assets/img/project1.jpg" class="card-img-top" alt="Brain Tumor Detection">
+            <div class="card-body">
+              <h5 class="card-title">Brain Tumor Detection</h5>
+              <p class="card-text">Deep Learning & Numerical Tensor Methods</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm">
+            <img src="assets/img/project2.jpg" class="card-img-top" alt="Bank Churn Prediction">
+            <div class="card-body">
+              <h5 class="card-title">Bank Customer Churn</h5>
+              <p class="card-text">Predictive Modeling & Analytics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm">
+            <img src="assets/img/project3.jpg" class="card-img-top" alt="Geophysical Inversion">
+            <div class="card-body">
+              <h5 class="card-title">Geophysical Inversion</h5>
+              <p class="card-text">Gaussian Processes & Subsurface Analysis</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="project-card">
-        <h3>Geophysical Inversion using Gaussian Processes</h3>
-        <p>Researched and implemented GP models for parameter estimation in non-linear ill-posed inverse problems. Generated synthetic training data using forward models and MAP estimation.</p>
+      <div class="text-center mt-4">
+        <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
       </div>
-
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:derrickchilenga1@gmail.com">derrickchilenga1@gmail.com</a></p>
-    <p>Phone: <a href="tel:+260963768567">+260 963 768 567</a></p>
-    <p>Explore more: <a href="portfolio-details.html">My Full Portfolio</a></p>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
+  <footer id="footer" class="footer pt-4 pb-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
+    </div>
   </footer>
 
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
