@@ -276,3 +276,25 @@ footer {
 .slide.prev {
   transform: translateX(-100%);
 }
+
+/* === Responsive Slider === */
+@media (max-width: 768px) {  /* tablets and smaller screens */
+  .achievement-slider {
+    width: 80%;       /* reduce width for smaller screens */
+    height: auto;     /* let height adjust automatically */
+  }
+
+  .slide {
+    height: auto;     /* scale images proportionally */
+  }
+}
+
+@media (max-width: 480px) {  /* phones */
+  .achievement-slider {
+    width: 95%;
+  }
+
+  .slide {
+    height: auto;
+  }
+}
