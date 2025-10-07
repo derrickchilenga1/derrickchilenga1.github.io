@@ -241,6 +241,7 @@
   <div class="skill-bar-graph"><span>MATLAB</span><div class="bar" style="width:100%"></div></div>
 </div>
 
+
     </div>
 
   
@@ -975,10 +976,24 @@
   createSlider('bank-churn-slider', 3000); // your Bank Churn slider
 </script>
 
+        <script>
+window.addEventListener('DOMContentLoaded', () => {
+  const bars = document.querySelectorAll('.skill-bar-graph .bar');
+  bars.forEach(bar => {
+    const inlineWidth = bar.getAttribute('style'); // e.g., width:100%
+    bar.style.width = '0'; // reset width
+    setTimeout(() => {
+      bar.style.width = inlineWidth.split(':')[1]; // set to actual width
+    }, 100);
+  });
+});
+</script>
+
         
 </body>
 
 </html>
+
 
 
 
