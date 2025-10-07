@@ -329,3 +329,56 @@ footer {
   border-radius: 10px;
   transition: width 1s ease-in-out;
 }
+
+/* === Bank Churn Project Slider === */
+.project-slider {
+  width: 400px;        /* adjust as needed */
+  height: 250px;       /* adjust as needed */
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateX(100%);
+}
+
+.project-slider .slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-slider .slide.prev {
+  transform: translateX(-100%);
+}
+
+/* === Responsive for Mobile === */
+@media (max-width: 768px) {
+  .project-slider {
+    width: 80%;
+    height: auto;
+  }
+
+  .project-slider .slide {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-slider {
+    width: 95%;
+  }
+
+  .project-slider .slide {
+    height: auto;
+  }
+}
+
