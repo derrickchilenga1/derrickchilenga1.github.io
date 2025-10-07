@@ -382,3 +382,26 @@ footer {
   }
 }
 
+.skills-graph {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.skill-bar-graph {
+  margin-bottom: 20px;
+}
+
+.skill-bar-graph span {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #333;
+}
+
+.skill-bar-graph .bar {
+  height: 25px;
+  background: #4caf50;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
