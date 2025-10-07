@@ -298,3 +298,34 @@ footer {
     height: auto;
   }
 }
+
+.skills .skill-column {
+  margin-bottom: 30px;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.progress-bar-wrap {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #4caf50;  /* green color, can change */
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
