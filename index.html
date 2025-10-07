@@ -304,9 +304,9 @@
               <h5>Machine Learning Project</h5>
               <p>Developed a Bank Customer Churn Prediction model using Random Forest, achieving 86% accuracy. Designed an interactive Streamlit dashboard to visualize results and support decision-making.</p>
             </div>
-             <div class="achievement-slider" id="slider">
-  <img src="assets/img/BC.jpg" class="slide active" alt="Research Achievement">
-  <img src="assets/img/BCC.jpg" class="slide" alt="Research Achievement">
+            <div class="project-slider" id="bank-churn-slider">
+  <img src="assets/img/BC.jpg" class="slide active" alt="Bank Churn Image 1">
+  <img src="assets/img/BCC.jpg" class="slide" alt="Bank Churn Image 2">
 </div>
             <!-- External project link -->
   <a href="https://iiip-capstone-project-el9hcnbsrywxzy9nqezu5p.streamlit.app/" target="_blank" title="View Project">
@@ -910,10 +910,29 @@
   const lightbox = GLightbox({ selector: '.portfolio-lightbox' });
 </script>
 
+<script>
+  // Bank Churn Slider
+  const bankSlides = document.querySelectorAll('#bank-churn-slider .slide');
+  let bankIndex = 0;
+
+  function showNextBankSlide() {
+    bankSlides[bankIndex].classList.remove('active');
+    bankSlides[bankIndex].classList.add('prev');
+    bankIndex = (bankIndex + 1) % bankSlides.length;
+    bankSlides[bankIndex].classList.add('active');
+
+    setTimeout(() => {
+      bankSlides.forEach(slide => slide.classList.remove('prev'));
+    }, 1000);
+  }
+
+  setInterval(showNextBankSlide, 3000); // change every 3 seconds
+</script>
 
 </body>
 
 </html>
+
 
 
 
