@@ -734,10 +734,17 @@
           <div class="portfolio-info">
             <h4>Bank Customer Churn Prediction</h4>
             <p>Machine Learning</p>
-            <div class="portfolio-links">
-              <a href="assets/img/portfolio/churn.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bank Customer Churn Prediction"><i class="bx bx-plus"></i></a>
-              <a href="https://iiip-capstone-project-el9hcnbsrywxzy9nqezu5p.streamlit.app/" target="_blank" title="View Project"><i class="bx bx-link"></i></a>
-            </div>
+           <div class="portfolio-links">
+  <!-- Lightbox image -->
+  <a href="assets/img/BC.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bank Customer Churn Prediction">
+    <i class="bx bx-plus"></i>
+  </a>
+
+  <!-- External project link -->
+  <a href="https://iiip-capstone-project-el9hcnbsrywxzy9nqezu5p.streamlit.app/" target="_blank" title="View Project">
+    <i class="bx bx-link"></i>
+  </a>
+</div>
           </div>
         </div>
       </div>
@@ -933,11 +940,16 @@
   setInterval(showNext, 3000);
 </script>
 
+        <!-- Add GLightbox JS initialization at bottom of your HTML -->
+<script>
+  const lightbox = GLightbox({ selector: '.portfolio-lightbox' });
+</script>
 
 
 </body>
 
 </html>
+
 
 
 
