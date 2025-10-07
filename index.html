@@ -424,9 +424,11 @@
             Researched Geophysical Inversion using Gaussian Processes to address non-linear inverse problems in scientific data, contributing to advancements in Geophysics and Data Science.
             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           </p>
-         <div class="achievement-slider" id="slider">
+        <div class="achievement-slider" id="slider">
   <img src="assets/img/TA.jpeg" class="slide active" alt="Research Achievement">
   <img src="assets/img/TD.jpeg" class="slide" alt="Research Achievement">
+</div>
+
 </div>
 
 
@@ -912,7 +914,7 @@
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
-        <script>
+       <script>
   const slides = document.querySelectorAll('.slide');
   let index = 0;
 
@@ -922,19 +924,20 @@
     index = (index + 1) % slides.length;
     slides[index].classList.add('active');
 
-    // remove 'prev' class after animation
     setTimeout(() => {
       slides.forEach(slide => slide.classList.remove('prev'));
     }, 1000);
   }
 
-  setInterval(showNext, 3000); // Change every 3 seconds
+  setInterval(showNext, 3000);
 </script>
+
 
 
 </body>
 
 </html>
+
 
 
 
