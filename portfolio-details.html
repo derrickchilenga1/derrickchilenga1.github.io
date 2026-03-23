@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Details - Derrick Chilenga</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Details - Derrick Chilenga</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo"><h1>Derrick Chilenga</h1></a>
-      <nav>
-        <ul class="d-flex gap-3 list-unstyled">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="header fixed-top">
+  <div class="container d-flex justify-content-between">
+    <h1>Derrick Chilenga</h1>
+  </div>
+</header>
 
-  <!-- Main Content -->
-  <main class="pt-5 mt-4">
+<main class="pt-5 mt-4">
+  <div class="container">
 
-    <div class="container">
+    <section id="brain-tumor" class="my-5">
+      <h2>Brain Tumor Detection</h2>
+      <img src="assets/img/tensor.jpg" class="img-fluid my-3">
+      <p>Deep Learning & Tensor Methods for image-based brain tumor classification.</p>
+      <a href="index.html" class="btn btn-secondary mt-2">Back Home</a>
+    </section>
 
-      <!-- Brain Tumor Detection -->
-      <section id="brain-tumor" class="my-5">
-        <h2>Brain Tumor Detection</h2>
-        <img src="assets/img/tensor.jpg" class="img-fluid my-3" alt="Brain Tumor Detection">
-        <p>
-          This project uses Deep Learning and Numerical Tensor Methods to classify brain tumors. 
-          Training data was generated synthetically and used to train convolutional neural networks for image classification.
-        </p>
-        <a href="portfolio.html" class="btn btn-secondary mt-2">Back to Portfolio</a>
-      </section>
+    <section id="bank-churn" class="my-5">
+      <h2>Bank Customer Churn</h2>
+      <img src="assets/img/churn.jpg" class="img-fluid my-3">
+      <p>Predictive modeling project for forecasting customer churn using ML techniques.</p>
+      <a href="index.html" class="btn btn-secondary mt-2">Back Home</a>
+    </section>
 
-      <!-- Bank Customer Churn -->
-      <section id="bank-churn" class="my-5">
-        <h2>Bank Customer Churn</h2>
-        <img src="assets/img/churn.jpg" class="img-fluid my-3" alt="Bank Customer Churn">
-        <p>
-          This predictive modeling project aimed to forecast customer churn using historical transaction and demographic data.
-          Techniques included data preprocessing, feature selection, and model evaluation using machine learning algorithms.
-        </p>
-        <a href="portfolio.html" class="btn btn-secondary mt-2">Back to Portfolio</a>
-      </section>
+    <section id="geophysical" class="my-5">
+      <h2>Geophysical Inversion</h2>
+      <img src="assets/img/geophysical.png" class="img-fluid my-3">
+      <p>Gaussian Processes research for subsurface frontier recovery.</p>
+      <a href="index.html" class="btn btn-secondary mt-2">Back Home</a>
+    </section>
 
-      <!-- Geophysical Inversion -->
-      <section id="geophysical" class="my-5">
-        <h2>Geophysical Inversion</h2>
-        <img src="assets/img/geophysical.png" class="img-fluid my-3" alt="Geophysical Inversion">
-        <p>
-          This research project used Gaussian Processes for subsurface frontier recovery. 
-          Synthetic data was generated with a forward model and Maximum A Posteriori (MAP) estimation 
-          was applied to train machine learning models for non-linear ill-posed inverse problems.
-        </p>
-        <a href="portfolio.html" class="btn btn-secondary mt-2">Back to Portfolio</a>
-      </section>
+  </div>
+</main>
 
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer text-center py-3">
-    <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
-  </footer>
-
-  <!-- Vendor JS -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<footer class="footer text-center py-3">
+<p>&copy; 2026 Derrick Chilenga</p>
+</footer>
 
 </body>
 </html>
