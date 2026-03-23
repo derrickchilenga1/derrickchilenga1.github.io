@@ -5,75 +5,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Derrick Chilenga</title>
 
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f4f6fb;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #2d2f7f, #4a4fc1);
+      padding: 15px 0;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    /* Card UI */
+    .card-ui {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+
+    /* Image */
+    .profile-img {
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    /* Section spacing */
+    .section {
+      padding: 80px 0;
+    }
+
+    /* Titles */
+    h2 {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    /* List styling */
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    ul li i {
+      color: #2d2f7f;
+      margin-right: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #2d2f7f;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    /* Mobile nav spacing fix */
+    .main {
+      margin-top: 80px;
+    }
+
+  </style>
 </head>
 
 <body>
 
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex justify-content-between align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Derrick Chilenga</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <header class="header fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Derrick Chilenga</h1>
     </div>
   </header>
 
-  <main id="main" class="main">
-    <section class="section about pt-5 mt-5">
+  <!-- Main -->
+  <main class="main">
+    <section class="section">
       <div class="container" data-aos="fade-up">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-5">
-            <img src="assets/img/FT1.jpg" class="img-fluid rounded" alt="Derrick Chilenga">
+
+        <div class="card-ui">
+
+          <div class="row align-items-center gy-4">
+
+            <!-- Image -->
+            <div class="col-lg-5">
+              <img src="assets/img/FT1.jpg" class="profile-img" alt="Derrick Chilenga">
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-7">
+              <h2>About Me</h2>
+
+              <p class="fst-italic">
+                I’m passionate about leveraging <strong>Data Science, Machine Learning</strong>, and 
+                <strong>Mathematics</strong> to solve real-world problems in finance, health, and clean energy sectors.
+              </p>
+
+              <ul>
+                <li><i class="bi bi-person"></i><strong> Full Name:</strong> Derrick Chilenga</li>
+                <li><i class="bi bi-briefcase"></i><strong> Profession:</strong> Data Scientist & AI Enthusiast</li>
+                <li><i class="bi bi-envelope"></i><strong> Email:</strong> derrickchilenga1@gmail.com</li>
+                <li><i class="bi bi-geo-alt"></i><strong> Location:</strong> Zambia</li>
+              </ul>
+
+              <p>
+                I hold a Master’s in Mathematical Sciences (Data Science) from AIMS Rwanda and a Bachelor’s in Mathematics 
+                and Statistics from the Copperbelt University. My research focuses on geophysical inversion using 
+                <strong>Gaussian Processes</strong> to enhance machine learning models for subsurface frontier recovery.
+              </p>
+
+            </div>
+
           </div>
-          <div class="col-lg-7 content">
-            <h2>About Me</h2>
-            <p class="fst-italic">
-              I’m passionate about leveraging <strong>Data Science, Machine Learning,</strong>
-              and <strong>Mathematics</strong> to solve real-world problems in finance, health,
-              and clean energy sectors.
-            </p>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Full Name:</strong> Derrick Chilenga</li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Profession:</strong> Data Scientist & AI Enthusiast</li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> derrickchilenga1@gmail.com</li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> Zambia</li>
-            </ul>
-            <p>
-              I have a Master’s in Mathematical Sciences (Data Science) from AIMS Rwanda
-              and a Bachelor’s in Mathematics and Statistics from the Copperbelt University.
-              My research focuses on training data for geophysical inversion using
-              <strong>Gaussian Processes</strong> to improve machine learning models for subsurface frontier recovery.
-            </p>
-          </div>
+
         </div>
+
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer dark-background">
-    <div class="container text-center">
+  <footer class="footer text-center">
+    <div class="container">
       <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
