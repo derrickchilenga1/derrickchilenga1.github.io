@@ -71,3 +71,28 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// Achievements Slider
+const achievementSlides = document.querySelectorAll('.achievement-slider .slide');
+let currentAchievement = 0;
+
+function showNextAchievement() {
+    // Hide current slide
+    achievementSlides[currentAchievement].classList.remove('active');
+    achievementSlides[currentAchievement].classList.add('prev');
+
+    // Move to next slide
+    currentAchievement = (currentAchievement + 1) % achievementSlides.length;
+
+    achievementSlides[currentAchievement].classList.add('active');
+
+    // Remove 'prev' class from all other slides
+    achievementSlides.forEach((slide, index) => {
+        if(index !== currentAchievement) {
+            slide.classList.remove('prev');
+        }
+    });
+}
+
+// Auto-slide every 3 seconds
+setInterval(showNextAchievement, 3000);
