@@ -2,229 +2,239 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Derrick Chilenga | Resume & Portfolio</title>
+  <title>Resume - Derrick Chilenga</title>
 
-  <!-- Favicons -->
-  <link href="assets/img/geophysical.png" rel="icon">
-  <link href="assets/img/DC.jpg" rel="apple-touch-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
   <style>
-    .portfolio-item { transition: transform 0.3s; }
-    .portfolio-item:hover { transform: scale(1.05); }
-    .progress { height: 25px; background: #e9ecef; border-radius: 5px; margin-bottom: 15px; }
-    .progress span { position: absolute; left: 10px; top: 2px; font-weight: 600; color: #000; }
-    .progress-bar { background: #0d6efd; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #38bdf8;
+      margin: 0;
+    }
+
+    main {
+      padding: 100px 20px 50px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+    }
+
+    ul li ul li {
+      margin-bottom: 5px;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .btn-download:hover {
+      background: #22c1f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 50px;
+    }
   </style>
 </head>
 
 <body>
 
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1>Derrick Chilenga</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Derrick Chilenga</h1>
+      <nav>
+        <a href="index.html" class="me-3">Home</a>
+        <a href="education.html" class="me-3">Education</a>
+        <a href="resume.html" class="me-3">Resume</a>
+        <a href="portfolio.html" class="me-3">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main id="main" class="mt-5 pt-5">
-
+  <main>
     <!-- Resume Section -->
-    <section id="resume-section" class="resume-section pt-5 pb-5">
-      <div class="container" data-aos="fade-up">
+    <section id="resume">
+      <div class="container">
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Education, Experience, Skills & Projects</p>
+          <p>Download or view my professional experience and skills</p>
+          <a href="assets/docs/Derrick_Chilenga_Resume.pdf" class="btn-download" download>Get My Resume</a>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Education</h3>
-            <ul>
-              <li><strong>MSc in Mathematical Sciences (Data Science)</strong> – AIMS Rwanda, 2024</li>
-              <li><strong>Bachelor’s in Mathematics (Statistics)</strong> – Copperbelt University, Zambia</li>
-              <li><strong>Postgraduate Diploma in Data Analytics & Business Management</strong></li>
-            </ul>
+        <!-- Education -->
+        <h2>Education</h2>
+        <ul>
+          <li><strong>MSc in Mathematical Sciences (Data Science)</strong> – AIMS Rwanda, 2024</li>
+          <li><strong>Bachelor’s in Mathematics (Statistics)</strong> – Copperbelt University, Zambia</li>
+          <li><strong>Postgraduate Diploma in Data Analytics & Business Management</strong></li>
+        </ul>
 
-            <h3>Professional Experience</h3>
+        <!-- Professional Experience -->
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>
+            <strong>Management Trainee</strong> – FNB Zambia, Lusaka, Zambia (January 2026 – Present)
             <ul>
-              <li><strong>Sales Officer</strong> – Dangote, 3 years</li>
-              <li><strong>Data Science & Analytics Intern</strong> – Future Interns</li>
-              <li><strong>Teaching Assistant & Student Tutor</strong> – CBU Mathematics Department</li>
+              <li>Support Bancassurance operations through execution, monitoring, and reporting.</li>
+              <li>Assist customer-focused product, sales, and service initiatives.</li>
+              <li>Collect, analyze, and report data to support decision-making.</li>
+              <li>Support innovation and cross-functional initiatives to improve efficiency.</li>
+              <li>Complete training assignments within a structured graduate development program.</li>
+              <li>Participate in formal training and on-the-job learning activities.</li>
+              <li>Uphold strong planning, reporting, and stakeholder engagement standards.</li>
             </ul>
-          </div>
+          </li>
 
-          <div class="col-lg-6">
-            <h3>Skills</h3>
-            <div class="progress mb-2" data-bs-toggle="tooltip" title="Experienced in Pandas, NumPy, Matplotlib">
-              <span>Data Analysis & Visualization</span>
-              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
-            </div>
-            <div class="progress mb-2" data-bs-toggle="tooltip" title="Machine Learning & AI Models">
-              <span>Machine Learning & AI</span>
-              <div class="progress-bar" role="progressbar" style="width: 85%;"></div>
-            </div>
-            <div class="progress mb-2" data-bs-toggle="tooltip" title="Statistics, Probability, Linear Algebra">
-              <span>Mathematics & Statistics</span>
-              <div class="progress-bar" role="progressbar" style="width: 95%;"></div>
-            </div>
-            <div class="progress mb-2" data-bs-toggle="tooltip" title="Python, R, SQL">
-              <span>Python, R, SQL</span>
-              <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
-            </div>
-          </div>
-        </div>
+          <li>
+            <strong>Audit Associate</strong> – KPMG Zambia, Lusaka, Zambia (January 2025 – Present)
+            <ul>
+              <li>Conduct audits for diverse clients across various sectors.</li>
+              <li>Review and verify client documentation for accuracy, validity, and completeness.</li>
+              <li>Analyze financial statements to ensure compliance with accounting standards.</li>
+              <li>Prepare and maintain accurate audit documentation.</li>
+              <li>Assist in the preparation of audit reports summarizing findings.</li>
+              <li>Participate in training sessions for professional development.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>KYC Assistant</strong> – Zanaco Head Office, Lusaka, Zambia (January 2025)
+            <ul>
+              <li>Conducted Know Your Customer (KYC) checks to ensure compliance with regulatory and company standards.</li>
+              <li>Reviewed and verified client documentation for accuracy, validity, and completeness.</li>
+              <li>Performed customer due diligence (CDD) and enhanced due diligence (EDD) based on risk assessments.</li>
+              <li>Maintained accurate records to support audits and regulatory requirements.</li>
+              <li>Collaborated with compliance teams to investigate and resolve discrepancies.</li>
+              <li>Stayed updated on anti-money laundering (AML) policies and industry best practices.</li>
+              <li>Communicated effectively with clients and internal teams to address KYC requirements during audits and inspections.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Data Analyst Intern</strong> – Industry Immersion Africa, Ghana (July – September 2023)
+            <ul>
+              <li>Developed a machine learning model to predict whether a bank customer would stay or leave.</li>
+              <li>Employed the Random Forest Classifier to build the model.</li>
+              <li>Achieved an accuracy of 86%, with precision of 87% and recall of 97% for predicting retained customers.</li>
+              <li>Developed an interactive dashboard using Streamlit for visualizing customer churn data.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Teaching Assistant</strong> – The Copperbelt University, Zambia (Jan – June 2023)
+            <ul>
+              <li>Tutored undergraduate students in Mathematics courses such as Mathematical Methods, Statistics, and Business Analysis.</li>
+              <li>Assisted in marking scripts and invigilating exams, contributing to the academic process.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Student Tutor</strong> – The Copperbelt University, Zambia (Feb – September 2022)
+            <ul>
+              <li>Led tutorials for first-year students, helping them grasp complex mathematical concepts.</li>
+              <li>Provided one-on-one support to students struggling with course material, resulting in improved academic performance.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Research & Projects -->
+        <h2>Research & Projects</h2>
+        <ul>
+          <li>Brain Tumor Detection using Deep Learning and Numerical Tensor Methods</li>
+          <li>Bank Customer Churn Prediction – Industry Immersion Africa</li>
+          <li>Geophysical Inversion using Gaussian Processes for Subsurface Frontier Recovery</li>
+        </ul>
+
+        <!-- Skills -->
+        <h2>Skills</h2>
+        <ul>
+          <li>Data Analysis & Visualization</li>
+          <li>Machine Learning & AI</li>
+          <li>Python, R, SQL</li>
+          <li>Gaussian Processes & Tensor Methods</li>
+          <li>Mathematics & Statistics</li>
+        </ul>
+
       </div>
     </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio-section" class="portfolio-section pt-5 pb-5 bg-light">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Some of my key projects and research work</p>
-        </div>
-
-        <div class="row g-4 portfolio-container" id="portfolio-container">
-          <!-- Portfolio items will be injected here -->
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container text-center">
-      <p>&copy; 2026 Derrick Chilenga | All Rights Reserved</p>
-    </div>
+  <footer>
+    &copy; 2025 Derrick Chilenga | All Rights Reserved
   </footer>
 
-  <!-- Vendor JS -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS -->
-  <script>
-    // Animate progress bars
-    document.addEventListener("DOMContentLoaded", () => {
-      const progressBars = document.querySelectorAll('.progress-bar');
-      progressBars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-          bar.style.transition = 'width 2s';
-          bar.style.width = width;
-        }, 300);
-      });
-
-      // Initialize tooltips
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
-
-      // Initialize GLightbox
-      const lightbox = GLightbox({ selector: '.glightbox' });
-    });
-
-    // Portfolio Data
-    const projects = [
-      {
-        title: "Brain Tumor Detection",
-        description: "Deep Learning & Tensor Methods",
-        image: "assets/img/project1.jpg",
-        detailImage: "assets/img/tensor.jpg",
-        link: "portfolio-details.html#brain-tumor"
-      },
-      {
-        title: "Bank Customer Churn",
-        description: "Predictive Modeling",
-        image: "assets/img/project2.jpg",
-        detailImage: "assets/img/churn.jpg",
-        link: "portfolio-details.html#bank-churn"
-      },
-      {
-        title: "Geophysical Inversion",
-        description: "Gaussian Processes Research",
-        image: "assets/img/project3.jpg",
-        detailImage: "assets/img/geophysical.png",
-        link: "portfolio-details.html#geophysical"
-      }
-    ];
-
-    const container = document.getElementById('portfolio-container');
-    projects.forEach(project => {
-      container.innerHTML += `
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="${project.image}" class="img-fluid" alt="${project.title}">
-            <div class="portfolio-info">
-              <h4>${project.title}</h4>
-              <p>${project.description}</p>
-              <a href="${project.detailImage}" class="glightbox" title="${project.title}"><i class="bi bi-plus"></i></a>
-              <a href="${project.link}" class="btn btn-sm btn-primary mt-2">View Details</a>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-  </script>
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-<div class="text-center mt-4">
-  <a href="assets/docs/Derrick_Chilenga_Resume.pdf" download class="btn btn-primary">
-    Get My Resume
-  </a>
-</div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container text-center">
-      <p>&copy; 2025 Derrick Chilenga | All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <!-- Vendor JS -->
-  <script src="assets/6endor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
